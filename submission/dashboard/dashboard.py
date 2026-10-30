@@ -8,11 +8,6 @@ Original file is located at
 """
 
 
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import os
 
 # Config Halaman Streamlit
 st.set_page_config(
@@ -153,19 +148,3 @@ with tab2:
     st.pyplot(fig)
 
 st.caption("Proyek Analisis Data Dicoding")
-
-from pyngrok import ngrok
-
-# Tempel authtoken ngrok kamu di sini
-ngrok.set_auth_token("3LPdRZUZrNyPfu3tZntdMRYoqcH_SGgz9YLskqSQMP1SpiYY")
-
-import os
-import subprocess
-from pyngrok import ngrok
-
-# Buka port 8501 via ngrok
-public_url = ngrok.connect(8501)
-print(f"🔗 Buka Dashboard Kamu Di Sini: {public_url}")
-
-# Jalankan Streamlit di background
-subprocess.Popen(["streamlit", "run", "dashboard.py"])
