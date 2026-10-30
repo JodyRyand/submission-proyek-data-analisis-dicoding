@@ -150,3 +150,6 @@ Original file is located at
 #     st.pyplot(fig)
 # 
 # st.caption("Proyek Analisis Data Dicoding")
+
+# Jalankan Streamlit di background
+subprocess.Popen(["streamlit", "run", "dashboard.py"])
