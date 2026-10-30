@@ -150,18 +150,3 @@ Original file is located at
 #     st.pyplot(fig)
 # 
 # st.caption("Proyek Analisis Data Dicoding")
-
-
-
-# Tempel authtoken ngrok kamu di sini
-ngrok.set_auth_token("3LPdRZUZrNyPfu3tZntdMRYoqcH_SGgz9YLskqSQMP1SpiYY")
-
-import os
-import subprocess
-
-# Buka port 8501 via ngrok
-public_url = ngrok.connect(8501)
-print(f"🔗 Buka Dashboard Kamu Di Sini: {public_url}")
-
-# Jalankan Streamlit di background
-subprocess.Popen(["streamlit", "run", "dashboard.py"])
