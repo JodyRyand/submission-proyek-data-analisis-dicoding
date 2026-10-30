@@ -7,11 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/11WtnW4BdkfKeyhnWRbkUkSvFrYSr3QBd
 """
 
-!pip install streamlit -q
-!pip install pyngrok -q
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%writefile dashboard.py
